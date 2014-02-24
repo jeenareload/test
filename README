@@ -1,0 +1,33 @@
+infoassembly contain main code.
+
+editor :- eclipse
+java:-1.7
+
+include following lib........
+Library:-
+slf4j-simple-1.6.4.jar
+stanford-corenlp-3.3.1-models.jar
+stanford-corenlp-3.3.1.jar
+slf4j-api-1.6.4.jar
+java-gearman-service-0.6.6.jar
+
+include data file in resource folder..
+article_dump.json
+
+Step:-1
+Change project config file...
+change infoassembly.test.common.info.java as per your requirement
+
+Step 2:-
+run Server....
+run infoassembly.test.server.Server.java
+
+Step 3:-
+run worker...
+run infoassembly.test.worker.GearmanWorker.java in all system where you want distribute your work.
+
+Step 4:-
+run client...
+run infoassembly.test.client.Client.java.
+
+each thread mantain it own time.
